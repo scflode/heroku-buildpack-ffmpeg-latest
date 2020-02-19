@@ -1,8 +1,9 @@
 # heroku-buildpack-ffmpeg-latest
 
-[![CircleCI](https://circleci.com/gh/jonathanong/heroku-buildpack-ffmpeg-latest/tree/master.svg?style=svg)](https://circleci.com/gh/jonathanong/heroku-buildpack-ffmpeg-latest/tree/master)
+>This fork provides the possiblity to define a `FFMPEG_VERSION` config variable in Heroku or Dokku to fetch a
+specific version. See https://www.johnvansickle.com/ffmpeg/old-releases/ for a list of available ones.
 
-> If you'd like to maintain this repository, let me know!
+>*Note*: This buildpack does currently not create a merged `.release` file. Please put it before the ones that do.
 
 A Heroku buildpack for ffmpeg that always downloads the latest [static build](http://johnvansickle.com/ffmpeg/).
 Unlike other build packs, I never compile anything.
@@ -12,11 +13,11 @@ Unlike other build packs, I never compile anything.
 Add the following to your `.buildpacks`:
 
 ```
-https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+https://github.com/scflode/heroku-buildpack-ffmpeg-latest.git
 ```
 
 Or run the following from the heroku command line:
 
 ```
-heroku buildpacks:add https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+heroku buildpacks:add https://github.com/scflode/heroku-buildpack-ffmpeg-latest.git
 ```
