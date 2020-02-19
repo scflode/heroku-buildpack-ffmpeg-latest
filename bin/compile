@@ -8,7 +8,7 @@ echo "-----> Install ffmpeg"
 BUILD_DIR=$1
 VENDOR_DIR="vendor"
 if [ ! -z "${FFMPEG_VERSION}" ]; then
-  if [ "${FFMPEG_VERSION}" == "latest" ]; then
+  if [ "${FFMPEG_VERSION}" = "latest" ]; then
     DOWNLOAD_URL="https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz"
   else
     DOWNLOAD_URL="https://www.johnvansickle.com/ffmpeg/old-releases/ffmpeg-${FFMPEG_VERSION}-amd64-static.tar.xz"
